@@ -1,0 +1,3 @@
+D:\Reps\mpashell\src\MpaShell\wwwroot\x-page.js
+D:\Reps\mpashell\src\MpaShell\wwwroot\x-shell.js
+D:\Reps\mpashell\src\MpaShell\wwwroot\x-navigator.js

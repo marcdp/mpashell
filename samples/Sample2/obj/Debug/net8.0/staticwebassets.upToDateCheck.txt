@@ -1,0 +1,8 @@
+wwwroot\app.json
+wwwroot\favicon.ico
+wwwroot\index.html
+wwwroot\logo.svg
+wwwroot\module1\icons\add.svg
+wwwroot\module1\module.json
+wwwroot\module1\pages\page1.html
+wwwroot\module1\pages\page2.html

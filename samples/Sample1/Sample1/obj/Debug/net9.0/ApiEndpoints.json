@@ -1,0 +1,42 @@
+[
+  {
+    "ContainingType": "MpaShell.Controllers.Config",
+    "Method": "Get",
+    "RelativePath": "api/config",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MpaShell.Controllers.Test",
+    "Method": "Get",
+    "RelativePath": "api/test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sample1.Module1.Controllers.ValuesController",
+    "Method": "Get",
+    "RelativePath": "api/test2",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sample1.Module2.Controllers.ValuesController",
+    "Method": "Get",
+    "RelativePath": "api/test3",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

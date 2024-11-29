@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/XShell.Mpa.Sample/XShell.Mpa.Sample.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\XShell.Mpa.Sample.ti1ojh2cne.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-S\u002BtK7KQAQtjTwoMHpYOreGJVP7wwbd7T/jHPmmuJSdg="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2182"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022S\u002BtK7KQAQtjTwoMHpYOreGJVP7wwbd7T/jHPmmuJSdg=\u0022"},{"Name":"Last-Modified","Value":"Tue, 26 Nov 2024 12:05:19 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/XShell.Mpa.Sample/XShell.Mpa.Sample.ti1ojh2cne.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\XShell.Mpa.Sample.ti1ojh2cne.bundle.scp.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ti1ojh2cne"},{"Name":"integrity","Value":"sha256-S\u002BtK7KQAQtjTwoMHpYOreGJVP7wwbd7T/jHPmmuJSdg="},{"Name":"label","Value":"_content/XShell.Mpa.Sample/XShell.Mpa.Sample.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2182"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022S\u002BtK7KQAQtjTwoMHpYOreGJVP7wwbd7T/jHPmmuJSdg=\u0022"},{"Name":"Last-Modified","Value":"Tue, 26 Nov 2024 12:05:19 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>Sample1</AssemblyName>
+    <RootNamespace>Sample1</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\MpaShell\MpaShell.csproj" />
+    <ProjectReference Include="..\Sample1.Module1\Sample1.Module1.csproj" />
+    <ProjectReference Include="..\Sample1.Module2\Sample1.Module2.csproj" />
+  </ItemGroup>
+
+</Project>

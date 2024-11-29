@@ -1,0 +1,73 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "Sample1/1.0.0": {
+        "dependencies": {
+          "MpaShell": "1.0.0",
+          "Sample1.Module1": "1.0.0",
+          "Sample1.Module2": "1.0.0"
+        },
+        "runtime": {
+          "Sample1.dll": {}
+        }
+      },
+      "MpaShell/1.0.0": {
+        "runtime": {
+          "MpaShell.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Sample1.Module1/1.0.0": {
+        "dependencies": {
+          "MpaShell": "1.0.0"
+        },
+        "runtime": {
+          "Sample1.Module1.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Sample1.Module2/1.0.0": {
+        "dependencies": {
+          "MpaShell": "1.0.0"
+        },
+        "runtime": {
+          "Sample1.Module2.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Sample1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MpaShell/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sample1.Module1/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Sample1.Module2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

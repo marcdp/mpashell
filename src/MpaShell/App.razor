@@ -1,0 +1,38 @@
+﻿@inject NavigationManager Navigation
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+
+    <!-- import map -->
+    <script type="importmap">
+        {
+            "imports": {
+                "mpa-shell": "/_content/MpaShell/mpa-shell.js",
+                "mpa-page": "/_content/MpaShell/mpa-page.js"
+            }
+        }
+    </script>
+
+    <!-- mpa-shell -->
+    <script src="/_content/MpaShell/mpa-shell.js" type="module"></script>
+
+    <!-- head outlet -->
+    <HeadOutlet />
+</head>
+<body>
+
+    <!-- mpa-shell instance -->
+    <mpa-shell src="/api/config">
+
+    </mpa-shell>
+    <hr/>
+    <div style="border:1px red solid">
+        <Routes />
+    </div>
+
+</body>
+</html>

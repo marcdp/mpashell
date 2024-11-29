@@ -1,0 +1,35 @@
+﻿
+<x-page-handler page-label="This is a titleeee" >
+
+    <script type="module">
+        export default {
+            state: {
+                value: {
+                    field1: "hllllo"
+                },
+                domain: []
+            },
+            async onCommand(command, args) {
+                if (command == "load") {
+                    //load
+                    var aux = this.label;
+                }
+            }
+        }
+    </script>
+
+    <template>
+
+        <x-form>
+            <x-datafields columns="3">
+                <x-datafield label="hola" type="text" x-model="state.field1"></x-datafield>
+                <x-datafield label="hola" type="date"></x-datafield>
+                <x-datafield label="hola" type="text"></x-datafield>
+            </x-datafields>
+            <x-button icon="x-add" label="add"></x-button>
+        </x-form>
+
+        This is a page1
+    </template>
+
+</x-page-handler>

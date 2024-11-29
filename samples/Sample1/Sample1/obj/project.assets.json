@@ -1,0 +1,156 @@
+{
+  "version": 3,
+  "targets": {
+    "net9.0": {
+      "MpaShell/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/MpaShell.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MpaShell.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Sample1.Module1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "MpaShell": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sample1.Module1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sample1.Module1.dll": {}
+        }
+      },
+      "Sample1.Module2/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "dependencies": {
+          "MpaShell": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Sample1.Module2.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Sample1.Module2.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MpaShell/1.0.0": {
+      "type": "project",
+      "path": "../../../src/MpaShell/MpaShell.csproj",
+      "msbuildProject": "../../../src/MpaShell/MpaShell.csproj"
+    },
+    "Sample1.Module1/1.0.0": {
+      "type": "project",
+      "path": "../Sample1.Module1/Sample1.Module1.csproj",
+      "msbuildProject": "../Sample1.Module1/Sample1.Module1.csproj"
+    },
+    "Sample1.Module2/1.0.0": {
+      "type": "project",
+      "path": "../Sample1.Module2/Sample1.Module2.csproj",
+      "msbuildProject": "../Sample1.Module2/Sample1.Module2.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net9.0": [
+      "MpaShell >= 1.0.0",
+      "Sample1.Module1 >= 1.0.0",
+      "Sample1.Module2 >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\MarcDelosPoch\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Reps\\mpashell\\samples\\Sample1\\Sample1\\Sample1.csproj",
+      "projectName": "Sample1",
+      "projectPath": "D:\\Reps\\mpashell\\samples\\Sample1\\Sample1\\Sample1.csproj",
+      "packagesPath": "C:\\Users\\MarcDelosPoch\\.nuget\\packages\\",
+      "outputPath": "D:\\Reps\\mpashell\\samples\\Sample1\\Sample1\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\MarcDelosPoch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net9.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "\\\\nas3\\Packages\\nuget": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "projectReferences": {
+            "D:\\Reps\\mpashell\\samples\\Sample1\\Sample1.Module1\\Sample1.Module1.csproj": {
+              "projectPath": "D:\\Reps\\mpashell\\samples\\Sample1\\Sample1.Module1\\Sample1.Module1.csproj"
+            },
+            "D:\\Reps\\mpashell\\samples\\Sample1\\Sample1.Module2\\Sample1.Module2.csproj": {
+              "projectPath": "D:\\Reps\\mpashell\\samples\\Sample1\\Sample1.Module2\\Sample1.Module2.csproj"
+            },
+            "D:\\Reps\\mpashell\\src\\MpaShell\\MpaShell.csproj": {
+              "projectPath": "D:\\Reps\\mpashell\\src\\MpaShell\\MpaShell.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "all"
+      },
+      "SdkAnalysisLevel": "9.0.100"
+    },
+    "frameworks": {
+      "net9.0": {
+        "targetAlias": "net9.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,493 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\bus.js",
+      "PackagePath": "staticwebassets\\bus.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\i18n.js",
+      "PackagePath": "staticwebassets\\i18n.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\loader.js",
+      "PackagePath": "staticwebassets\\loader.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-accordion-panel.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-accordion-panel.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-accordion.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-accordion.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-anchor.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-anchor.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-app-bar.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-app-bar.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-app-drawer.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-app-drawer.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-app-menu.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-app-menu.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-app-search.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-app-search.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-avatar.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-avatar.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-badge.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-badge.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-breadcrumb.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-breadcrumb.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-button.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-button.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-card.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-card.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-clock.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-clock.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-code-editor.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-code-editor.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-contextmenu.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-contextmenu.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-datafield.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-datafield.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-datafields.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-datafields.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-datatable.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-datatable.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-divider.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-divider.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-form.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-form.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-i18n.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-i18n.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-icon.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-icon.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-lazy.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-lazy.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-markdown.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-markdown.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-menu.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-menu.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-menugroup.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-menugroup.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-menuitem.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-menuitem.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-notice.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-notice.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-page-body.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-page-body.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-page-error.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-page-error.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-page-footer.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-page-footer.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-page-handler.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-page-handler.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-page-header.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-page-header.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-page-loading.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-page-loading.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-pager.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-pager.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-popover.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-popover.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-richtext.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-richtext.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-spinner.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-spinner.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-tab.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-tab.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-tabs.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-tabs.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-toolbar.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-toolbar.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-wizard-header.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-wizard-header.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-wizard-panel.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-wizard-panel.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-wizard.js",
+      "PackagePath": "staticwebassets\\modules\\x\\components\\x-wizard.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\css\\index.css",
+      "PackagePath": "staticwebassets\\modules\\x\\css\\index.css"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\add.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\add.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\add_box.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\add_box.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\apps.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\apps.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\arrow-back.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\arrow-back.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\arrow-forward.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\arrow-forward.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\bell.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\bell.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\check.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\check.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\close.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\close.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\delete.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\delete.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\drag-indicator.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\drag-indicator.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\drag_handle.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\drag_handle.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\edit.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\edit.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\empty.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\empty.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\error-fill.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\error-fill.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\error2-fill.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\error2-fill.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\filter-alt.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\filter-alt.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\format_align_center.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\format_align_center.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\format_align_justify.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\format_align_justify.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\format_align_left.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\format_align_left.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\format_align_right.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\format_align_right.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\format_bold.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\format_bold.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\format_clear.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\format_clear.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\format_color_text.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\format_color_text.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\format_indent_decrease.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\format_indent_decrease.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\format_indent_increase.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\format_indent_increase.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\format_italic.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\format_italic.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\format_list_bulleted.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\format_list_bulleted.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\format_list_numbered.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\format_list_numbered.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\format_quote.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\format_quote.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\format_strikethrough.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\format_strikethrough.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\format_underlined.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\format_underlined.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\fullscreen.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\fullscreen.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\home.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\home.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\info-fill.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\info-fill.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\key.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\key.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\keyboard-arrow-down.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\keyboard-arrow-down.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\keyboard-arrow-left.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\keyboard-arrow-left.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\keyboard-arrow-right.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\keyboard-arrow-right.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\keyboard-arrow-up.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\keyboard-arrow-up.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\logout.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\logout.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\menu.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\menu.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\more-vert.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\more-vert.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\question-fill.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\question-fill.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\redo.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\redo.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\refresh.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\refresh.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\remove.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\remove.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\search.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\search.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\settings.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\settings.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\star.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\star.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\success-fill.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\success-fill.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\undo.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\undo.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\icons\\warning-fill.svg",
+      "PackagePath": "staticwebassets\\modules\\x\\icons\\warning-fill.svg"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-layout-app-main.js",
+      "PackagePath": "staticwebassets\\modules\\x\\layouts\\x-layout-app-main.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-layout-page-default.js",
+      "PackagePath": "staticwebassets\\modules\\x\\layouts\\x-layout-page-default.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-layout-page-dialog.js",
+      "PackagePath": "staticwebassets\\modules\\x\\layouts\\x-layout-page-dialog.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-layout-page-main.js",
+      "PackagePath": "staticwebassets\\modules\\x\\layouts\\x-layout-page-main.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-layout-page-stack.js",
+      "PackagePath": "staticwebassets\\modules\\x\\layouts\\x-layout-page-stack.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\module.json",
+      "PackagePath": "staticwebassets\\modules\\x\\module.json"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\pages\\x-page-lang-picker.html",
+      "PackagePath": "staticwebassets\\modules\\x\\pages\\x-page-lang-picker.html"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\pages\\x-page-search.html",
+      "PackagePath": "staticwebassets\\modules\\x\\pages\\x-page-search.html"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\ui\\types\\from-html.js",
+      "PackagePath": "staticwebassets\\modules\\x\\ui\\types\\from-html.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\ui\\x-element.js",
+      "PackagePath": "staticwebassets\\modules\\x\\ui\\x-element.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\ui\\x-template.js",
+      "PackagePath": "staticwebassets\\modules\\x\\ui\\x-template.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\settings.js",
+      "PackagePath": "staticwebassets\\settings.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\ui.js",
+      "PackagePath": "staticwebassets\\ui.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\utils.js",
+      "PackagePath": "staticwebassets\\utils.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\x-navigator.js",
+      "PackagePath": "staticwebassets\\x-navigator.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\x-page.js",
+      "PackagePath": "staticwebassets\\x-page.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\x-shell.js",
+      "PackagePath": "staticwebassets\\x-shell.js"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MpaShell.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.MpaShell.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.MpaShell.props",
+      "PackagePath": "build\\MpaShell.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.MpaShell.props",
+      "PackagePath": "buildMultiTargeting\\MpaShell.props"
+    },
+    {
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.MpaShell.props",
+      "PackagePath": "buildTransitive\\MpaShell.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
