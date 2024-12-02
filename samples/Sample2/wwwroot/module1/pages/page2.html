@@ -1,9 +1,20 @@
 ﻿<html>
 <head>
-    <meta name="mpa-page:layout" content="main" />
-    <title>Titttte</title>
+    <meta name="mpa-page-label"     content="This is a Page2 titleee" />
+    <meta name="mpa-page-handler"   content="x-page-handler-html" />
 </head>
 <body>
+    <script type="module">
+        export default {
+            state: {},
+            async onCommand(command, args) {
+                if (command == "load") {
+                    //load
+                    debugger;
+                }
+            }
+        }
+    </script>
     This is the page <b>2</b>
 </body>
 </html>

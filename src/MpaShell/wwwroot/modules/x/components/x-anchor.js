@@ -1,4 +1,4 @@
-import mpaShell from "mpa-shell";
+import mpaShell from "./../../../mpa-shell.js";
 import XElement from "../ui/x-element.js";
 
 // class
@@ -10,7 +10,7 @@ export default XElement.define("x-anchor", {
         :host(.menuitem) a {display:flex; padding-left:.6em; padding-right:.6em; text-decoration:none;}
     `,
     template: `
-        <a  tabindex="1"
+        <a tabindex="1"
             x-attr:href="state.realHref" 
             x-on:click="click" 
             x-on:keydown.enter="click"

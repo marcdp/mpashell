@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MpaShell")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a30480496f3ada75875aeca5c60b12b192bd1a04")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d70654d0150d63bf7143e977ce8bbde46408e613")]
 [assembly: System.Reflection.AssemblyProductAttribute("MpaShell")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MpaShell")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

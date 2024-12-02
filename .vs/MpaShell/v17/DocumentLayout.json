@@ -3,24 +3,12 @@
   "WorkspaceRootPath": "D:\\Reps\\mpashell\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{24C788D7-286E-4A01-B484-4AF00B4DD025}|samples\\Sample2\\Sample2.csproj|d:\\reps\\mpashell\\samples\\sample2\\wwwroot\\module1\\pages\\page1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24C788D7-286E-4A01-B484-4AF00B4DD025}|samples\\Sample2\\Sample2.csproj|solutionrelative:samples\\sample2\\wwwroot\\module1\\pages\\page1.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|d:\\reps\\mpashell\\src\\mpashell\\wwwroot\\modules\\x\\components\\x-app-bar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|solutionrelative:src\\mpashell\\wwwroot\\modules\\x\\components\\x-app-bar.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24C788D7-286E-4A01-B484-4AF00B4DD025}|samples\\Sample2\\Sample2.csproj|d:\\reps\\mpashell\\samples\\sample2\\wwwroot\\module1\\module.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{24C788D7-286E-4A01-B484-4AF00B4DD025}|samples\\Sample2\\Sample2.csproj|solutionrelative:samples\\sample2\\wwwroot\\module1\\module.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{24C788D7-286E-4A01-B484-4AF00B4DD025}|samples\\Sample2\\Sample2.csproj|d:\\reps\\mpashell\\samples\\sample2\\wwwroot\\module1\\pages\\page2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24C788D7-286E-4A01-B484-4AF00B4DD025}|samples\\Sample2\\Sample2.csproj|solutionrelative:samples\\sample2\\wwwroot\\module1\\pages\\page2.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|d:\\reps\\mpashell\\src\\mpashell\\wwwroot\\modules\\x\\components\\x-page-handler.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|solutionrelative:src\\mpashell\\wwwroot\\modules\\x\\components\\x-page-handler.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|d:\\reps\\mpashell\\src\\mpashell\\wwwroot\\mpa-page.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|solutionrelative:src\\mpashell\\wwwroot\\mpa-page.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+      "AbsoluteMoniker": "D:0:0:{24C788D7-286E-4A01-B484-4AF00B4DD025}|samples\\Sample2\\Sample2.csproj|d:\\reps\\mpashell\\samples\\sample2\\wwwroot\\module1\\pages\\page3.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{24C788D7-286E-4A01-B484-4AF00B4DD025}|samples\\Sample2\\Sample2.csproj|solutionrelative:samples\\sample2\\wwwroot\\module1\\pages\\page3.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,67 +78,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "page2.html",
-              "DocumentMoniker": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\pages\\page2.html",
-              "RelativeDocumentMoniker": "samples\\Sample2\\wwwroot\\module1\\pages\\page2.html",
-              "ToolTip": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\pages\\page2.html",
-              "RelativeToolTip": "samples\\Sample2\\wwwroot\\module1\\pages\\page2.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-29T17:09:46.346Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "page1.html",
-              "DocumentMoniker": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\pages\\page1.html",
-              "RelativeDocumentMoniker": "samples\\Sample2\\wwwroot\\module1\\pages\\page1.html",
-              "ToolTip": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\pages\\page1.html",
-              "RelativeToolTip": "samples\\Sample2\\wwwroot\\module1\\pages\\page1.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-11-29T17:02:38.596Z",
+              "Title": "x-app-bar.js",
+              "DocumentMoniker": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-app-bar.js",
+              "RelativeDocumentMoniker": "src\\MpaShell\\wwwroot\\modules\\x\\components\\x-app-bar.js",
+              "ToolTip": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-app-bar.js",
+              "RelativeToolTip": "src\\MpaShell\\wwwroot\\modules\\x\\components\\x-app-bar.js",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-02T14:28:23.866Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "module.json",
-              "DocumentMoniker": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\module.json",
-              "RelativeDocumentMoniker": "samples\\Sample2\\wwwroot\\module1\\module.json",
-              "ToolTip": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\module.json",
-              "RelativeToolTip": "samples\\Sample2\\wwwroot\\module1\\module.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-29T16:16:33.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "mpa-page.js",
-              "DocumentMoniker": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\mpa-page.js",
-              "RelativeDocumentMoniker": "src\\MpaShell\\wwwroot\\mpa-page.js",
-              "ToolTip": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\mpa-page.js",
-              "RelativeToolTip": "src\\MpaShell\\wwwroot\\mpa-page.js",
-              "ViewState": "AgIAAOEAAAAAAAAAAAAAAAABAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-29T16:01:59.576Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "x-page-handler.js",
-              "DocumentMoniker": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-page-handler.js",
-              "RelativeDocumentMoniker": "src\\MpaShell\\wwwroot\\modules\\x\\components\\x-page-handler.js",
-              "ToolTip": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\components\\x-page-handler.js",
-              "RelativeToolTip": "src\\MpaShell\\wwwroot\\modules\\x\\components\\x-page-handler.js",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-29T15:52:28.253Z",
+              "Title": "page3.html",
+              "DocumentMoniker": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\pages\\page3.html",
+              "RelativeDocumentMoniker": "samples\\Sample2\\wwwroot\\module1\\pages\\page3.html",
+              "ToolTip": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\pages\\page3.html",
+              "RelativeToolTip": "samples\\Sample2\\wwwroot\\module1\\pages\\page3.html",
+              "ViewState": "AgIAAHMAAAAAAAAAAAAAAHwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-12-01T21:01:35.912Z",
               "EditorCaption": ""
             }
           ]

@@ -33,6 +33,7 @@
     /* x-button */
     --x-button-border-radius: .25em;
     --x-button-width-wide: 8em;
+    --x-button-justify-content: center;
     
     /* x-card */
     --x-card-border-radius: .4em;
@@ -151,10 +152,12 @@
         --x-page-padding-right:1.5em;
     }
     html {
-        overflow-x: hidden;
+height: 100vh;
+        overflow-x: hidden!important;
     }
     body {
-        overflow-x: hidden;
+        height: 100vh;
+        overflow-x: hidden!important;
     }
 }
 
@@ -162,7 +165,6 @@ html {
     font-family:var(--x-font-family);
     font-size:var(--x-font-size);
     color:var(--x-text-color);   
-
     scrollbar-width: thin;
 }
 :not(:defined) {
@@ -175,7 +177,6 @@ h4 {font-size:var(--x-font-size); font-weight:700;}
 h5 {font-size:var(--x-font-size); font-weight:600;}
 h6 {font-size:var(--x-font-size); font-weight:normal;}
 
-/* x-menu */
 
 /* mpa-page */
 mpa-page {display:block;}

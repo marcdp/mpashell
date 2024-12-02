@@ -27,6 +27,14 @@
                     "href": "/module1/pages/page2.html"
                 },
                 {
+                    "label": "Page3",
+                    "href": "/module1/pages/page3.html"
+                },
+                {
+                    "label": "Page4",
+                    "href": "/module1/pages/page4.html"
+                },
+                {
                     "label": "My Services",
                     "children": [
                         {

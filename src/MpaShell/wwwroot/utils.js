@@ -3,9 +3,18 @@ function deepAssign(obj1, obj2) {
     for (let key in obj2) {
         if (Object.prototype.hasOwnProperty.call(obj2, key)) {
             if (Array.isArray(obj2[key]) && Array.isArray(obj1[key])) {
-                for(let item of obj2[key]){
-                    if (obj1[key].indexOf(item) == -1){
-                        obj1[key].push(item);    
+                for (let item of obj2[key]) {
+                    if (typeof (item) == "object" && item.id) {
+                        let aux = obj1[key].filter(x => x.id == item.id)
+                        if (aux.length) {
+                            deepAssign(aux[0], item);
+                        } else {
+                            obj1[key].push(item);
+                        }
+                    } else {
+                        if (obj1[key].indexOf(item) == -1) {
+                            obj1[key].push(item);
+                        }
                     }
                 }
             } else if (obj2[key] instanceof Object && obj1[key] instanceof Object) {
@@ -76,7 +85,9 @@ class Utils {
         }
       }
     static async importModuleFromJSCode(js, url) {
-        const baseUrl = Utils.absolutizeUrl(url.substring(0, url.lastIndexOf("/")));
+        if (url && url.indexOf("?") != -1) url = url.substring(0, url.indexOf("?"))
+        //const baseUrl = Utils.absolutizeUrl(url.substring(0, url.lastIndexOf("/")));
+        const baseUrl = Utils.absolutizeUrl(url);
         //replace each import relative URL with an absolute URL
         if (js.indexOf("import ") != -1) {
             const importRegex = /(import\s+.*?['"])(\.\/|\.\.\/|\/)([^'"]+)(['"])/g;

@@ -4,10 +4,10 @@ class I18n {
     _config = {
         lang: "en",
         langs: [
-            { id: 'en', label: 'English', main:true },
+            { id: 'en', label: 'English'},
+            { id: 'es', label: 'Spanish'},
             { id: 'fr', label: 'French' },
             { id: 'de', label: 'German' },
-            { id: 'es', label: 'Spanish', main:true },
         ],
         strings: {
         }
@@ -54,6 +54,8 @@ class I18n {
 
 // export
 export default new I18n();
+
+
 
 /*
 

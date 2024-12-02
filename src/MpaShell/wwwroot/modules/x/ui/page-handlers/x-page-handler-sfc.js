@@ -1,10 +1,11 @@
-import mpaShell from "../../../mpa-shell.js";
-import XTemplate from "../ui/x-template.js";
-import utils from "../../../utils.js";
-import loader from "../../../loader.js";
+import mpaShell from "../../../../mpa-shell.js";
+import XTemplate from "../x-template.js";
+import utils from "../../../../utils.js";
+import loader from "../../../../loader.js";
+
 
 // class
-class XPageHandler extends HTMLElement  {
+class XPageHandlerSfc extends HTMLElement  {
 
     //fields
     _state = null;
@@ -14,24 +15,23 @@ class XPageHandler extends HTMLElement  {
 
     //ctor
     constructor() {
-        super();   
-        //this.attachShadow({ mode: "open" });
+        super();
     }
 
     //properties
-    get page() {return mpaShell.getPage(this);}
-    get src() {return this.page.src;}
+    get page() { return mpaShell.getPage(this); }
+    get src() { return this.page.src; }
 
-    get label() {return this.page.label;}
-    set label(value) {this.page.label = value;}
-    
-    get icon() {return this.page.icon;}
-    set icon(value) {this.page.icon = value;}
-    
-    get result() {return this.page.result;}
-    set result(value) {this.page.result = value;}
+    get label() { return this.page.label; }
+    set label(value) { this.page.label = value; }
 
-    get state() {return this._state;}
+    get icon() { return this.page.icon; }
+    set icon(value) { this.page.icon = value; }
+
+    get result() { return this.page.result; }
+    set result(value) { this.page.result = value; }
+
+    get state() { return this._state; }
     set state(value) {
         let self = this;
         this._state = new Proxy(value, {
@@ -46,30 +46,36 @@ class XPageHandler extends HTMLElement  {
     }
 
     //methods
-    async connectedCallback() {
-        //src
-        let src = this.page.src;
-        //init
-        let template = this.querySelector(":scope > template");
-        if (template) {
-            this.removeChild(template);
-            template = template.innerHTML.replaceAll("{{", "<x:text>").replaceAll("}}", "</x:text>").trim();
-        }
+    async init(doc, src) {
         //script
-        let script = this.querySelector(":scope > script[type='module']");
+        let script = doc.querySelector("body > script[type='module']");
+        let module = null;
         if (script) {
-            this.removeChild(script);
-        }
-        let moduleText = script.textContent;
-        let module = await utils.importModuleFromJSCode(moduleText, src);
-        for (var key in module.default) {
-            this[key] = module.default[key];
+            script.parentNode.removeChild(script);
+            let moduleText = script.textContent;
+            module = await utils.importModuleFromJSCode(moduleText, src);
+            if (module.default) {
+                for (var key in module.default) {
+                    this[key] = module.default[key];
+                }
+            }
         }
         //styleSheets
         let styleSheets = [];
-        this.querySelectorAll(":scope > style").forEach((style) => { styleSheets.push(style.sheet); });
+        doc.querySelectorAll("style").forEach((style) => {
+            styleSheets.push(style.sheet);
+            style.parentNode.removeChild(style);
+        });
+        //template
+        let template = doc.body.innerHTML.replaceAll("{{", "<x:text>").replaceAll("}}", "</x:text>").trim();
         //state
-        this.state = module.default.state || {};
+        let metaState = doc.head.querySelector("meta[name='mpa-page-state']")
+        if (metaState) {
+            let jsonState = metaState.content
+            this.state = JSON.parse(jsonState);
+        } else {
+            this.state = (module && module.default && module.default.state) || {};
+        }
         //xtemplate
         this._xtemplate = new XTemplate({
             template,
@@ -93,16 +99,17 @@ class XPageHandler extends HTMLElement  {
         //template instance
         this._xtemplateInstance = this._xtemplate.createInstance(this._state, (command, event) => {
             //handler
-            this.onCommand(command, { event});
+            this.onCommand(command, { event });
         }, () => {
             //invalidate
             this.invalidate();
         }, this);
-        //search
-        let searchParams = new URLSearchParams(this.src.indexOf("?") != -1 ? this.src.substring(this.src.indexOf("?")+1) : "");
+    }
+    async connectedCallback() {
         //load
+        let searchParams = new URLSearchParams(this.src.indexOf("?") != -1 ? this.src.substring(this.src.indexOf("?") + 1) : "");
         let loadArgs = {};
-        for(const [key, value] of searchParams.entries()) if (!key.startsWith("x-")) loadArgs[key] = value;
+        for (const [key, value] of searchParams.entries()) if (!key.startsWith("x-")) loadArgs[key] = value;
         this.onCommand("load", loadArgs);
         //render
         this.render();
@@ -136,14 +143,12 @@ class XPageHandler extends HTMLElement  {
         };
         //render
         this._xtemplateInstance.render();
-    }   
+    }
 }
 
-// custom
-
 //define web component
-customElements.define('x-page-handler', XPageHandler);
+customElements.define('x-page-handler-sfc', XPageHandlerSfc);
 
 //export 
-export default XPageHandler;
+export default XPageHandlerSfc;
 

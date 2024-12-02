@@ -1,35 +1,81 @@
-﻿
-<x-page-handler page-label="This is a titleeee" >
+﻿<html>
+<head>
+    <meta name="description"    content="This is the description" />
+    <meta name="author"         content="asdas" />
+    <meta name="mpa-page-label" content="This is a label" />
+    <meta name="mpa-page-state" content='{"var1":"hello world"}' />
+</head>
+<body>
 
     <script type="module">
         export default {
-            state: {
-                value: {
-                    field1: "hllllo"
-                },
-                domain: []
-            },
             async onCommand(command, args) {
                 if (command == "load") {
                     //load
-                    var aux = this.label;
+                    //this.label = "Hello"
+                    //var aux = this.label;
+                } else if (command == "show-page-stack") {
+                    //show page stack
+                    this.showPage({ url: "page4.html?message=hello+world", target: "#stack" });
+
+                } else if (command == "show-page-stack-thin") {
+                    //show page stack thin
+                    this.showPage({ url: "page4.html?message=hello+world&mpa-page-class=thin", target: "#stack" });
+
+                } else if (command == "show-page-stack-thin-right") {
+                    //show page stack thin right
+                    this.showPage({ url: "page4.html?message=hello+world&mpa-page-class=thin,right", target: "#stack" });
+
+                } else if (command == "show-page-stack-popup") {
+                    //show page stack popup
+                    this.showPage({ url: "page4.html?message=hello+world&mpa-page-class=popup", target: "#stack" });
+
+                } else if (command == "show-page-dialog") {
+                    //show page dialog
+                    this.showDialog({ url: "page4.html" });
                 }
             }
         }
     </script>
 
-    <template>
+    State is: {{ JSON.stringify(state) }}
 
-        <x-form>
-            <x-datafields columns="3">
-                <x-datafield label="hola" type="text" x-model="state.field1"></x-datafield>
-                <x-datafield label="hola" type="date"></x-datafield>
-                <x-datafield label="hola" type="text"></x-datafield>
-            </x-datafields>
-            <x-button icon="x-add" label="add"></x-button>
-        </x-form>
+    <hr />
+    <ul>
+        <li><x-anchor href="page2.html">Help</x-anchor></li>
+        <li><x-anchor href="page2.html" breadcrumb>Help2 with breadcrumb</x-anchor></li>
+        <li><x-anchor href="page2.html?mpa-page-label=helllllloooooo" breadcrumb>Help with breadcrumb and label</x-anchor></li>
 
-        This is a page1
-    </template>
+        <li><x-button command="show-page-stack" label="Show page stack"></x-button></li>
+        <li><x-button command="show-page-stack-thin" label="Show page stack thin"></x-button></li>
+        <li><x-button command="show-page-stack-thin-right" label="Show page stack thin right"></x-button></li>
+        <li><x-button command="show-page-stack-popup" label="Show page stack popup"></x-button></li>
+        <li><x-button command="show-page-dialog" data-dddd="2" data-asdas="321" label="Show page dialog"></x-button></li>
 
-</x-page-handler>
+        <x-clock></x-clock>
+    </ul>
+
+    <x-form>
+        <x-datafields columns="3">
+            <x-datafield label="hola" type="text" x-model="state.var1"></x-datafield>
+            <x-datafield label="hola" type="date"></x-datafield>
+            <x-datafield label="hola" type="text"></x-datafield>
+        </x-datafields>
+        <x-button icon="x-add" label="add"></x-button>
+    </x-form>
+
+    This is a page1
+
+    sd
+    asd
+    a
+    <ul>
+        <li>asdasd 1</li>
+        <li>asdasd 2</li>
+        <li>asdasd 3</li>
+        <li>asdasd 4</li>
+    </ul>
+
+</body>
+</html>
+

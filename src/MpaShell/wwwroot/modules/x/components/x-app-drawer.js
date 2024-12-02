@@ -13,6 +13,7 @@ export default XElement.define("x-app-drawer", {
         }
         :host > div.expanded {
             display:block;
+            
         } 
         :host > div div.backdrop {
             position:fixed; left:0; top:0; right:0; bottom:0; 
@@ -50,8 +51,7 @@ export default XElement.define("x-app-drawer", {
             border-radius: var(--x-drawer-border-radius-inverted);
         }
 
-        /* other */
-        :host div div.container > x-button.close {float:right;}
+        :host div div.container > x-button.close {position:absolute; top:.75em; right:.8em;}
 
     `,
     template: `

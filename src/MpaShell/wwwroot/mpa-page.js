@@ -32,7 +32,10 @@ class MpaPage extends HTMLElement {
     get src() {return this._src;}
     set src(value) {
         let changed = (this._src != value);
-        if (!value.startsWith("page:") && !value.startsWith("/") && value.indexOf("://") == -1 && this.src) {
+        if (value.startsWith("page:")) {
+            let query = (value.indexOf("?") != -1 ? value.substring(value.indexOf("?")) : "");
+            value = loader.resolveSrc(value.split("?")[0]) + query;
+        } else if (!value.startsWith("/") && value.indexOf("://") == -1 && this.src) {
             let aux = this.src;
             aux = aux.substring(0, aux.lastIndexOf("/"));   
             value = aux + "/" + value;
@@ -143,7 +146,7 @@ class MpaPage extends HTMLElement {
         let searchParams = new URLSearchParams(this.src.indexOf("?") != -1 ? this.src.substring(this.src.indexOf("?") + 1) : "");
         //class
         let className = "";
-        if (searchParams.get("x-class")) className = searchParams.get("x-class");
+        if (searchParams.get("mpa-page-class")) className = searchParams.get("mpa-page-class");
         if (className) for(let classNamePart of className.split(",")) this.classList.add(classNamePart);
         //create dialog before fetch
         let dialog = null;
@@ -210,6 +213,15 @@ class MpaPage extends HTMLElement {
             let html = content;
             let parser = new DOMParser();
             let doc = parser.parseFromString(html, "text/html");
+            //add default metas
+            for (let meta of mpaShell.config.ui.meta) {
+                if (!doc.head.querySelector("meta[name='" + meta.name + "']")) {
+                    var metaElement = document.createElement("meta");
+                    metaElement.setAttribute("name", meta.name);
+                    metaElement.setAttribute("content", meta.content);
+                    doc.head.appendChild(metaElement);
+                };
+            }
             //load required components
             let componentNames = [...new Set(Array.from(doc.querySelectorAll('*')).filter(el => {
                 if (el.tagName.includes('-')) {
@@ -226,26 +238,27 @@ class MpaPage extends HTMLElement {
                 });
                 await loader.load(resourceNames);
             }
-            //layout
-            let layout = mpaShell.config.ui.layouts.page.default;
-            if (this._type) layout = mpaShell.config.ui.layouts.page[this._type];
-            doc.head.querySelectorAll("meta[name='page-layout']").forEach((sender) => { layout = mpaShell.config.ui.layouts.page[sender.content]; });
-            doc.body.querySelectorAll(":scope > *[page-layout]").forEach((sender) => { layout = mpaShell.config.ui.layouts.page[sender.getAttribute("page-layout")]; });
-            if (searchParams.get("page-layout")) layout = mpaShell.config.ui.layouts.page[searchParams.get("page-layout")] || layout;
-            await loader.load("layout:" + layout);
             //label
             let label = doc.title;
-            doc.head.querySelectorAll("meta[name='page-label']").forEach((sender) => { label = sender.content; });
-            doc.body.querySelectorAll(":scope > *[page-label]").forEach((sender) => { label = sender.getAttribute("page-label"); });
-            if (searchParams.get("page-label")) label = searchParams.get("page-label");
+            doc.head.querySelectorAll("meta[name='mpa-page-label']").forEach((sender) => { label = sender.content; });
+            if (searchParams.get("mpa-page-label")) label = searchParams.get("mpa-page-label");
             //icon
             let icon = "";
-            doc.head.querySelectorAll("meta[name='page-icon']").forEach((sender) => { icon = sender.content; });
-            doc.body.querySelectorAll(":scope > *[page-icon]").forEach((sender) => { icon = sender.getAttribute("page-icon"); });
-            if (searchParams.get("page-icon")) icon = searchParams.get("page-icon");
+            doc.head.querySelectorAll("meta[name='mpa-page-icon']").forEach((sender) => { icon = sender.content; });
+            if (searchParams.get("mpa-page-icon")) icon = searchParams.get("mpa-page-icon");
+            //layout
+            let layout = mpaShell.config.ui.layouts.page.default;
+            doc.head.querySelectorAll("meta[name='mpa-page-layout']").forEach((sender) => { layout = mpaShell.config.ui.layouts.page[sender.content]; });
+            if (this._type) layout = mpaShell.config.ui.layouts.page[this._type];
+            if (searchParams.get("mpa-page-layout")) layout = mpaShell.config.ui.layouts.page[searchParams.get("mpa-page-layout")] || layout;
+            await loader.load("layout:" + layout);
+            //handler
+            let handler = "";
+            doc.head.querySelectorAll("meta[name='mpa-page-handler']").forEach((sender) => { handler = sender.content; });
+            if (searchParams.get("mpa-page-handler")) handler = searchParams.get("mpa-page-handler");
             //breadcrumb
             let breadcrumb = [];
-            if (searchParams.get("page-breadcrumb")) breadcrumb = JSON.parse(atob(searchParams.get("page-breadcrumb").replace(/_/g, "/").replace(/-/g, "+")));
+            if (searchParams.get("mpa-page-breadcrumb")) breadcrumb = JSON.parse(atob(searchParams.get("mpa-page-breadcrumb").replace(/_/g, "/").replace(/-/g, "+")));
             //container
             let container = dialog || this;
             container.replaceChildren();
@@ -254,27 +267,15 @@ class MpaPage extends HTMLElement {
                 container.appendChild(layoutElement);
                 container = layoutElement;
             }
-            //init page
-            doc.body.childNodes.forEach((node) => {
-                container.appendChild(node.cloneNode(true));
-            });
-            //activate scripts
-            container.querySelectorAll("script").forEach((script) => {
-                let newScript = document.createElement("script");
-                for (var i = 0; i < script.attributes.length; i++) {
-                    newScript.setAttribute(script.attributes[i].name, script.attributes[i].value);
-                }
-                newScript.textContent = script.textContent;
-                if (container.contains(script)) {
-                    script.parentNode.replaceChild(newScript, script);
-                } else {
-                    container.appendChild(newScript);
-                }
-            });
             //set vars
             if (label) this.label = label;
             if (icon) this.icon = icon;
             if (breadcrumb) this.breadcrumb = breadcrumb;
+            //load handler
+            await loader.load("page-handler:" + handler);
+            let instance = document.createElement(handler);
+            await instance.init(doc, src);
+            container.appendChild(instance);
             //set as loaded
             this._status = "loaded"; 
             //remove loading
@@ -288,7 +289,7 @@ class MpaPage extends HTMLElement {
 
     //private methods
     async _showError(code, message, stacktrace, container) {
-        var name = mpaShell.config.ui.components.errorHandler;
+        var name = mpaShell.config.ui.components.pageError;
         await loader.load("component:" + name);
         let error = document.createElement(name);
         error.setAttribute("code", code);

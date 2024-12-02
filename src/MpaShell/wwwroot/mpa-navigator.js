@@ -78,7 +78,7 @@ class MpaNavigator extends HTMLElement {
                 breadcrumb.push(item);
             }
             breadcrumb.push({label: targetPage.label, href: targetPage.src});
-            src += (src.indexOf("?")!=-1 ? "&" : "?") + "x-breadcrumb=" + btoa(JSON.stringify(breadcrumb)).replace(/\+/g,"-").replace(/\//g,"_");
+            src += (src.indexOf("?") != -1 ? "&" : "?") + "mpa-page-breadcrumb=" + btoa(JSON.stringify(breadcrumb)).replace(/\+/g,"-").replace(/\//g,"_");
         }
         //stack page
         if (page) {
@@ -174,14 +174,14 @@ class MpaNavigator extends HTMLElement {
                     if (this.pages.indexOf(event.target) == 0) {
                         //main page change
                         var label = event.target.label;
-                        if (label) document.title = label + " (" + mpaShell.config.info.title + ")";
+                        if (label) document.title = label + " / " + mpaShell.config.info.label;
                     }
                 });
                 page.addEventListener("page:load", (event) => {
                     if (this.pages.indexOf(event.target) == 0) {
                         //main page loaded
                         var label = event.target.label;
-                        if (label) document.title = label + " (" + mpaShell.config.info.title + ")";
+                        if (label) document.title = label + " / " + mpaShell.config.info.label;
                         //emit event navigation:end
                         bus.emit("navigation:end", {page: event.target});
                     }

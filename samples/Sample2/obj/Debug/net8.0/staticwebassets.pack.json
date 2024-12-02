@@ -33,6 +33,14 @@
       "PackagePath": "staticwebassets\\module1\\pages\\page2.html"
     },
     {
+      "Id": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\pages\\page3.html",
+      "PackagePath": "staticwebassets\\module1\\pages\\page3.html"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\pages\\page4.html",
+      "PackagePath": "staticwebassets\\module1\\pages\\page4.html"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Sample2.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

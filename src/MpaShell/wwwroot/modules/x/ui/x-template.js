@@ -590,7 +590,7 @@ class XTemplateInstance {
                 //slot
             } else {
                 //diff node
-                //if (!parent) debugger
+                if (!parent) debugger
                 let child = parent.childNodes[vNodeNew.options.index + inew];
                 this._diffDomElement(vNodeOld, vNodeNew, child, level + 1);
             }

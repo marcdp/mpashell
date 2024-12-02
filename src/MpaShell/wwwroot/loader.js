@@ -6,7 +6,12 @@ class Loader {
     //vars
     _config = {
         preload: [],
-        map:[]
+        map: [
+            {
+                "resource": "component:mpa-{name}",
+                "src": "./mpa-{name}.js"
+            },
+        ]
     };
     _cache = {};
     _typeConverters = {
@@ -131,7 +136,7 @@ class Loader {
                     if (definition.with && definition.with.type) {
                         let typeConverter = this._typeConverters[definition.with.type];
                         if (!typeConverter) {
-                            typeConverter = (await this.load("type:" + definition.with.type)).default;
+                            typeConverter = (await this.load("type-converter:" + definition.with.type)).default;
                             this._typeConverters[definition.with.type] = typeConverter;
                         }
                         value = await typeConverter(value, src);

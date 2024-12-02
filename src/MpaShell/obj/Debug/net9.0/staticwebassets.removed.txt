@@ -1,3 +1,5 @@
 D:\Reps\mpashell\src\MpaShell\wwwroot\x-page.js
 D:\Reps\mpashell\src\MpaShell\wwwroot\x-shell.js
 D:\Reps\mpashell\src\MpaShell\wwwroot\x-navigator.js
+D:\Reps\mpashell\src\MpaShell\wwwroot\modules\x\ui\types\from-html.js
+D:\Reps\mpashell\src\MpaShell\wwwroot\modules\x\components\x-page-handler.js

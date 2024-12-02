@@ -6,9 +6,9 @@ class UI {
 
     //vars
     _config = {
-        defaults:{
-            errorHandler: "",
-            pageLoading:""
+        components:{
+            pageError: "",
+            pageLoading: ""
         },
         layouts: {
             app: {
@@ -21,6 +21,7 @@ class UI {
                 default: "",    
             }
         },
+        meta: [],
         styleSheets: []
     };
 
