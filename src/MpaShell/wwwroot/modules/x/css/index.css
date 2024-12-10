@@ -56,13 +56,13 @@
     --x-divider-border: .05em #C8C6C4 solid;
 
     /* x-drawer */
-    --x-drawer-width: 22em;
-    --x-drawer-shadow: rgba(0, 0, 0, 0.22) 0px 25.6px 57.6px 0px, rgba(0, 0, 0, 0.18) 0px 4.8px 14.4px 0px;
-    --x-drawer-border-radius: .5em 0 0 .5em;
-    --x-drawer-border-radius-inverted: 0 .5em .5em 0;
-    --x-drawer-background: white;
-    --x-drawer-padding: 1.5em;
-    --x-drawer-backdrop: rgba(0,0,0,.2);
+    --x-app-drawer-width: 14em;
+    --x-app-drawer-shadow: rgba(0, 0, 0, 0.22) 0px 25.6px 57.6px 0px, rgba(0, 0, 0, 0.18) 0px 4.8px 14.4px 0px;
+    --x-app-drawer-border-radius: .5em 0 0 .5em;
+    --x-app-drawer-border-radius-inverted: 0 .5em .5em 0;
+    --x-app-drawer-background: white;
+    --x-app-drawer-padding: 1.5em;
+    --x-app-drawer-backdrop: rgba(0,0,0,.2);
     
     /* x-font */
     --x-font-family:"Segoe UI",-apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;

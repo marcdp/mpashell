@@ -4,15 +4,11 @@ class Bus {
 
 
     //vars
-    _config = {};
     _events = {};
 
     //ctor
     constructor() {
     }
-
-    //props
-    get config() {return this._config;}
 
     //methods
     on(event, listener) {

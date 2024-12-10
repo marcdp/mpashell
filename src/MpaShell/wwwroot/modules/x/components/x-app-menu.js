@@ -5,7 +5,11 @@ import bus from "../../../bus.js";
 // class
 export default XElement.define("x-app-menu", {
     style: `
-        :host {display:flex; gap:.1em .2em;}
+        :host {display:flex; gap:.1em .2em; flex-direction:column;
+            --x-button-justify-content:start;
+            --x-background-x-gray:white;
+        }
+        
         @media only screen and (max-width: 768px) {
             :host {display:flex; flex-direction:column; }
         }

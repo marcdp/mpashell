@@ -1,5 +1,5 @@
 import XTemplate from "./x-template.js";
-import mpaShell from "./../../../mpa-shell.js";
+import app from "./../../../app.js";
 import loader from "./../../../loader.js";
 
 
@@ -55,10 +55,10 @@ class XElement extends HTMLElement {
 
     //props
     get page() {
-        return mpaShell.getPage(this);
+        return app.getPage(this);
     }
-    get mpaShell() {
-        return mpaShell;
+    get app() {
+        return app;
     }
     get state() {return this._state;}
     set state(value) {

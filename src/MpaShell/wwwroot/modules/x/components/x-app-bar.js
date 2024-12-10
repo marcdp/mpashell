@@ -7,6 +7,7 @@ export default XElement.define("x-app-bar", {
     style: `
         :host {
             display:flex;
+            margin-left:var(--x-app-drawer-width);
             padding: 0 var(--x-page-padding-left) 0 var(--x-page-padding-right);
             height:4em;
             background:var(--x-background-page); 
@@ -72,8 +73,8 @@ export default XElement.define("x-app-bar", {
         onCommand(command) {
             if (command == "load") {
                 // load
-                this.state.label = mpaShell.config.info.label;
-                this.state.logo = mpaShell.config.info.logo;
+                this.state.label = mpaShell.config.app.label;
+                this.state.logo = mpaShell.config.app.logo;
                 this.state.url = mpaShell.config.navigator.base;
 
             } else if (command == "toggle") {

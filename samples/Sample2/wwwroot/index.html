@@ -3,19 +3,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--
-    <script type="importmap">
-        {
-            "imports": {
-                "mpa-shell": "/libs/mpa-shell/mpa-shell.js",
-                "mpa-page": "/libs/mpa-shell/mpa-page.js"
-            }
-        }
+    <script type="module">
+        //import
+        import app from "/libs/mpa-shell/app.js";
+        //init
+        await app.init({
+            // app
+            "app.name": "Sample2",
+            "app.label": "Sample2 title",
+            "app.version": "0.1",
+            "app.copyright": "",
+            "app.logo": "./logo.svg",
+            "app.base": "",
+            "app.start": "/module1/pages/page1.html",
+            // module x
+            "modules.x.url": "/libs/mpa-shell/modules/x/module.js",
+            "modules.x.args": { a: 1, b: 2 },
+            // module 1
+            "modules.module1.url": "./module1/module.js",
+            "modules.module1.path": "/module1",
+            // module 2
+            "modules.module2.url": "./module2/module.js",
+            "modules.module2.path": "/module2"
+        });
+        //start
+        await app.start();
     </script>
-    -->
-    <script src="/libs/mpa-shell/mpa-shell.js" type="module"></script>
 </head>
 <body>                                            
-    <mpa-shell src="/app.json"></mpa-shell>
 </body>
 </html>

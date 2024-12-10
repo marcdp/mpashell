@@ -3,7 +3,7 @@ import XElement from "../ui/x-element.js";
 // class
 export default XElement.define("x-layout-page-main", {
     style: `
-        :host {display:inline; _height:100vh;}
+        :host {display:block; margin-left:var(--x-app-drawer-width);}
         :host x-page-body {}
 
         @media only screen and (max-width: 768px) {

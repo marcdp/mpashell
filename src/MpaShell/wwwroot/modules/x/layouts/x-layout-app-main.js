@@ -6,7 +6,9 @@ export default XElement.define("x-layout-app-main", {
         :host {display:block;}
     `,
     template: `
+        <x-app-drawer></x-app-drawer>
         <x-app-bar></x-app-bar>
         <slot></slot>
+        
     `
 });

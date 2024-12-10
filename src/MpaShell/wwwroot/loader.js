@@ -1,18 +1,12 @@
-
+import utils from "./utils.js"
+import config from "./config.js"
 
 // class
 class Loader {
 
+
     //vars
-    _config = {
-        preload: [],
-        map: [
-            {
-                "resource": "component:mpa-{name}",
-                "src": "./mpa-{name}.js"
-            },
-        ]
-    };
+    _definitions = [];
     _cache = {};
     _typeConverters = {
         "arrayBuffer": async (response) => {
@@ -46,47 +40,54 @@ class Loader {
             return div.firstChild;
         }
     };
-    
+
+
     //ctor
     constructor() {
+        //add config event -> listen for changes
+        config.subscribe("loader", () => {
+            let definitions = [];
+            let keys = config.getSubKeys("loader");
+            for (let type of keys) {
+                for (let pattern of config.getSubKeys("loader." + type)) {
+                    let resource = type + ":" + pattern;
+                    let src = config.get("loader." + type + "." + pattern);
+                    let regexp = "";
+                    let k = 0;
+                    let i = resource.indexOf("{"), j = resource.indexOf("}");
+                    while (i != -1) {
+                        regexp += resource.substring(k, i);
+                        regexp += "(?<" + resource.substring(i + 1, j) + ">.+)";
+                        k = j + 1;
+                        i = resource.indexOf("{", j), j = resource.indexOf("}", i);
+                    }
+                    regexp += resource.substring(k);
+                    let definition = {
+                        resource,
+                        src,
+                        regexp: new RegExp(regexp),
+                    }
+                    definition.regexp = new RegExp(regexp);
+                    definitions.push(definition);
+                }
+            }
+            this._definitions = definitions;
+            debugger;
+        })
     }
+
 
     //props
-    get config() {return this._config;}
+    get config() { return this._config; }
 
-    //methods
-    async init(config) {
-        this._config = config;
-        //sort
-        this._config.map.sort((a,b)=>{
-            return a.resource.localeCompare(b.resource);
-        });
-        // convert expressions like "component:mpa-{name}" to regular expressions like "component:mpa-(?<name>.+)"
-        this._config.map.forEach((definition) => {
-            let regexp = "";
-            let resource = definition.resource;
-            let k = 0;
-            let i = resource.indexOf("{"), j = resource.indexOf("}");
-            while (i != -1) {
-                regexp += resource.substring(k, i);
-                regexp += "(?<" + resource.substring(i + 1, j) + ">.+)";
-                k = j + 1;
-                i = resource.indexOf("{", j), j = resource.indexOf("}", i);
-            }
-            regexp += resource.substring(k);
-            definition.regexp = new RegExp(regexp);
-        });
-        //preload
-        await this.load(this._config.preload);
-    }
 
     //methods
     register(resource, value) {
         this._cache[resource] = value;
     }
     resolve(resource) {
-        for(let i = this._config.map.length - 1; i >= 0; i--) {
-            let mapitem = this._config.map[i];
+        for(let i = this._definitions.length - 1; i >= 0; i--) {
+            let mapitem = this._definitions[i];
             let match = resource.match(mapitem.regexp);
             if (match) {
                 let src = mapitem.src;
@@ -158,8 +159,7 @@ class Loader {
         if (isString) return result[0];
         //return
         return result;
-    }
-    
+    }    
 };
 
 

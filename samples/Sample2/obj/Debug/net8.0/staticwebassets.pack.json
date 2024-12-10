@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\app.json",
-      "PackagePath": "staticwebassets\\app.json"
-    },
-    {
       "Id": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -21,8 +17,8 @@
       "PackagePath": "staticwebassets\\module1\\icons\\add.svg"
     },
     {
-      "Id": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\module.json",
-      "PackagePath": "staticwebassets\\module1\\module.json"
+      "Id": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\module.js",
+      "PackagePath": "staticwebassets\\module1\\module.js"
     },
     {
       "Id": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\pages\\page1.html",
@@ -39,6 +35,14 @@
     {
       "Id": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\pages\\page4.html",
       "PackagePath": "staticwebassets\\module1\\pages\\page4.html"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module2\\module.js",
+      "PackagePath": "staticwebassets\\module2\\module.js"
+    },
+    {
+      "Id": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module2\\pages\\page1.html",
+      "PackagePath": "staticwebassets\\module2\\pages\\page1.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Sample2.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

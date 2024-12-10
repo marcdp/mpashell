@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gA30X08jmoM4bXkWwh7XewCxEcQgqMWPfB/kEL/Mo1U=",
+  "Hash": "WA/9owAQdaK7W19avfDGDaSJ6wFTIMArdN3KKHzgmzw=",
   "Source": "Sample2",
   "BasePath": "_content/Sample2",
   "Mode": "Default",
@@ -16,27 +16,6 @@
     }
   ],
   "Assets": [
-    {
-      "Identity": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\app.json",
-      "SourceId": "Sample2",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\",
-      "BasePath": "_content/Sample2",
-      "RelativePath": "app#[.{fingerprint}]?.json",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "ggt2l5gclr",
-      "Integrity": "YJWh3NuHxOS3ZVUldPNY4q8o5qwsXQbMZTDDtEs7ZWU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\app.json"
-    },
     {
       "Identity": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\favicon.ico",
       "SourceId": "Sample2",
@@ -73,8 +52,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "aou429mugs",
-      "Integrity": "tqVy+/P53MDxLqRZ/YEjSXPHOpc20mR0k9bFfgA18r4=",
+      "Fingerprint": "qu304fqfaf",
+      "Integrity": "gpNJKfSxh4onBnyO3ydu7sDDav15ToUSdhjbjYAoCD4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
@@ -122,12 +101,12 @@
       "OriginalItemSpec": "wwwroot\\module1\\icons\\add.svg"
     },
     {
-      "Identity": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\module.json",
+      "Identity": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\module.js",
       "SourceId": "Sample2",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\",
       "BasePath": "_content/Sample2",
-      "RelativePath": "module1/module#[.{fingerprint}]?.json",
+      "RelativePath": "module1/module#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -136,11 +115,11 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fcf2qc4xqp",
-      "Integrity": "0bvT/vA/Kpvs3xEs+AnlAszCJ47EQ66/pr+vDUjCkGk=",
+      "Fingerprint": "3tyyjciixn",
+      "Integrity": "tyfsuOvO73NCMzTXUmQkuhJA8KnnfdcIbH1Eo7oWbJ8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\module1\\module.json"
+      "OriginalItemSpec": "wwwroot\\module1\\module.js"
     },
     {
       "Identity": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\pages\\page1.html",
@@ -225,91 +204,51 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\module1\\pages\\page4.html"
+    },
+    {
+      "Identity": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module2\\module.js",
+      "SourceId": "Sample2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\",
+      "BasePath": "_content/Sample2",
+      "RelativePath": "module2/module#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8x6vvyi21f",
+      "Integrity": "NOSs5k7yfCCDIgeO5gAgOGOU4vjkAp//zcN/R+d6AqE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\module2\\module.js"
+    },
+    {
+      "Identity": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module2\\pages\\page1.html",
+      "SourceId": "Sample2",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\",
+      "BasePath": "_content/Sample2",
+      "RelativePath": "module2/pages/page1#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i4mlj9nonx",
+      "Integrity": "QopRrSIaYVJl1Hj4hpRZKLJDphL3yiLfRK7qDWPM5WI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\module2\\pages\\page1.html"
     }
   ],
   "Endpoints": [
-    {
-      "Route": "app.ggt2l5gclr.json",
-      "AssetFile": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\app.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "886"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YJWh3NuHxOS3ZVUldPNY4q8o5qwsXQbMZTDDtEs7ZWU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 17:54:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ggt2l5gclr"
-        },
-        {
-          "Name": "label",
-          "Value": "app.json"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-YJWh3NuHxOS3ZVUldPNY4q8o5qwsXQbMZTDDtEs7ZWU="
-        }
-      ]
-    },
-    {
-      "Route": "app.json",
-      "AssetFile": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\app.json",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "886"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/json"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"YJWh3NuHxOS3ZVUldPNY4q8o5qwsXQbMZTDDtEs7ZWU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 17:54:28 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-YJWh3NuHxOS3ZVUldPNY4q8o5qwsXQbMZTDDtEs7ZWU="
-        }
-      ]
-    },
     {
       "Route": "favicon.9ux8m1lpbz.ico",
       "AssetFile": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\favicon.ico",
@@ -393,51 +332,6 @@
       ]
     },
     {
-      "Route": "index.aou429mugs.html",
-      "AssetFile": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\index.html",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "595"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/html"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"tqVy+/P53MDxLqRZ/YEjSXPHOpc20mR0k9bFfgA18r4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:55:41 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "aou429mugs"
-        },
-        {
-          "Name": "label",
-          "Value": "index.html"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-tqVy+/P53MDxLqRZ/YEjSXPHOpc20mR0k9bFfgA18r4="
-        }
-      ]
-    },
-    {
       "Route": "index.html",
       "AssetFile": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\index.html",
       "Selectors": [],
@@ -448,7 +342,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "595"
+          "Value": "1126"
         },
         {
           "Name": "Content-Type",
@@ -456,11 +350,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tqVy+/P53MDxLqRZ/YEjSXPHOpc20mR0k9bFfgA18r4=\""
+          "Value": "\"gpNJKfSxh4onBnyO3ydu7sDDav15ToUSdhjbjYAoCD4=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 09:55:41 GMT"
+          "Value": "Tue, 10 Dec 2024 15:39:12 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -470,7 +364,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tqVy+/P53MDxLqRZ/YEjSXPHOpc20mR0k9bFfgA18r4="
+          "Value": "sha256-gpNJKfSxh4onBnyO3ydu7sDDav15ToUSdhjbjYAoCD4="
+        }
+      ]
+    },
+    {
+      "Route": "index.qu304fqfaf.html",
+      "AssetFile": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1126"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gpNJKfSxh4onBnyO3ydu7sDDav15ToUSdhjbjYAoCD4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 15:39:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qu304fqfaf"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gpNJKfSxh4onBnyO3ydu7sDDav15ToUSdhjbjYAoCD4="
         }
       ]
     },
@@ -639,8 +578,8 @@
       ]
     },
     {
-      "Route": "module1/module.fcf2qc4xqp.json",
-      "AssetFile": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\module.json",
+      "Route": "module1/module.3tyyjciixn.js",
+      "AssetFile": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\module.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -649,19 +588,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4330"
+          "Value": "470"
         },
         {
           "Name": "Content-Type",
-          "Value": "application/json"
+          "Value": "text/javascript"
         },
         {
           "Name": "ETag",
-          "Value": "\"0bvT/vA/Kpvs3xEs+AnlAszCJ47EQ66/pr+vDUjCkGk=\""
+          "Value": "\"tyfsuOvO73NCMzTXUmQkuhJA8KnnfdcIbH1Eo7oWbJ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 18:09:19 GMT"
+          "Value": "Tue, 10 Dec 2024 15:41:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -671,21 +610,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "fcf2qc4xqp"
+          "Value": "3tyyjciixn"
         },
         {
           "Name": "label",
-          "Value": "module1/module.json"
+          "Value": "module1/module.js"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0bvT/vA/Kpvs3xEs+AnlAszCJ47EQ66/pr+vDUjCkGk="
+          "Value": "sha256-tyfsuOvO73NCMzTXUmQkuhJA8KnnfdcIbH1Eo7oWbJ8="
         }
       ]
     },
     {
-      "Route": "module1/module.json",
-      "AssetFile": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\module.json",
+      "Route": "module1/module.js",
+      "AssetFile": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\module.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -694,19 +633,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "4330"
+          "Value": "470"
         },
         {
           "Name": "Content-Type",
-          "Value": "application/json"
+          "Value": "text/javascript"
         },
         {
           "Name": "ETag",
-          "Value": "\"0bvT/vA/Kpvs3xEs+AnlAszCJ47EQ66/pr+vDUjCkGk=\""
+          "Value": "\"tyfsuOvO73NCMzTXUmQkuhJA8KnnfdcIbH1Eo7oWbJ8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 30 Nov 2024 18:09:19 GMT"
+          "Value": "Tue, 10 Dec 2024 15:41:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -716,7 +655,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0bvT/vA/Kpvs3xEs+AnlAszCJ47EQ66/pr+vDUjCkGk="
+          "Value": "sha256-tyfsuOvO73NCMzTXUmQkuhJA8KnnfdcIbH1Eo7oWbJ8="
         }
       ]
     },
@@ -1045,6 +984,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-jgw7vvVJUYVsOsBqwQxX4IlzUjCiOoX4qAxD58XFSb8="
+        }
+      ]
+    },
+    {
+      "Route": "module2/module.8x6vvyi21f.js",
+      "AssetFile": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module2\\module.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NOSs5k7yfCCDIgeO5gAgOGOU4vjkAp//zcN/R+d6AqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 15:40:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8x6vvyi21f"
+        },
+        {
+          "Name": "label",
+          "Value": "module2/module.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-NOSs5k7yfCCDIgeO5gAgOGOU4vjkAp//zcN/R+d6AqE="
+        }
+      ]
+    },
+    {
+      "Route": "module2/module.js",
+      "AssetFile": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module2\\module.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "276"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"NOSs5k7yfCCDIgeO5gAgOGOU4vjkAp//zcN/R+d6AqE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Dec 2024 15:40:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-NOSs5k7yfCCDIgeO5gAgOGOU4vjkAp//zcN/R+d6AqE="
+        }
+      ]
+    },
+    {
+      "Route": "module2/pages/page1.html",
+      "AssetFile": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module2\\pages\\page1.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "403"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QopRrSIaYVJl1Hj4hpRZKLJDphL3yiLfRK7qDWPM5WI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Dec 2024 12:44:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QopRrSIaYVJl1Hj4hpRZKLJDphL3yiLfRK7qDWPM5WI="
+        }
+      ]
+    },
+    {
+      "Route": "module2/pages/page1.i4mlj9nonx.html",
+      "AssetFile": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module2\\pages\\page1.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "403"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QopRrSIaYVJl1Hj4hpRZKLJDphL3yiLfRK7qDWPM5WI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 03 Dec 2024 12:44:22 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i4mlj9nonx"
+        },
+        {
+          "Name": "label",
+          "Value": "module2/pages/page1.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QopRrSIaYVJl1Hj4hpRZKLJDphL3yiLfRK7qDWPM5WI="
         }
       ]
     }

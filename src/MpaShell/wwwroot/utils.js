@@ -37,7 +37,12 @@ class Utils {
     static traverse(obj, callback) {
         for (let key in obj) {
             if (Object.prototype.hasOwnProperty.call(obj, key)) {
-                if (obj[key] instanceof Object) {
+                if (Array.isArray(obj[key])) {
+                    callback(obj, key);
+                    for (let item of obj[key]) {
+                        this.traverse(item, callback);
+                    }
+                } else if (obj[key] instanceof Object) {
                     this.traverse(obj[key], callback);
                 } else {
                     callback(obj, key);

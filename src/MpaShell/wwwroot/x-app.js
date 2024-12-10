@@ -1,24 +1,17 @@
-import mpaShell from "./mpa-shell.js";
+import props from "./config.js";
 import bus from "./bus.js";
 
-// consts
+// constants
 const HASH_PREFIX = "#!";
 
 
 // class
-class MpaNavigator extends HTMLElement {
+class XApp extends HTMLElement {
     
     //attrs
     static get observedAttributes() { 
         return []; 
     }
-
-    //fields
-    _config = {
-        base:  document.location.pathname.substring(0, document.location.pathname.lastIndexOf("/")),
-        start: ""
-    };
-    
 
     //ctor
     constructor() {
@@ -26,11 +19,10 @@ class MpaNavigator extends HTMLElement {
     }
 
     //props
-    get config() {return this._config;}
     get pages() {
         let result = [];
         for(var child of this.children){
-            if (child.localName == "mpa-page") {
+            if (child.localName == "x-page") {
                 if (child.getAttribute("type") != "dialog") result.push(child);
             } else {
                 result.push(child.firstChild);
@@ -40,21 +32,17 @@ class MpaNavigator extends HTMLElement {
     }
 
     //methods
-    async init(config) {
-        this._config = config;
-        if (this._config.base.startsWith("/")) {
-            this._config.base = document.location.protocol + "//" + document.location.host + this._config.base;
-        }
-    }
-    start() {
+    connectedCallback() {
         window.addEventListener("hashchange", () => {
             this._hashChange();
         });
         if (document.location.hash) {
             this._hashChange();
         } else {
-            document.location.hash = HASH_PREFIX + this.config.start;
+            document.location.hash = HASH_PREFIX + props.get("app.start");
         }
+    }
+    disconnectedCallback() {
     }
     getRealUrl(src, page, settings) {
         if (!settings) settings = {};
@@ -78,7 +66,7 @@ class MpaNavigator extends HTMLElement {
                 breadcrumb.push(item);
             }
             breadcrumb.push({label: targetPage.label, href: targetPage.src});
-            src += (src.indexOf("?") != -1 ? "&" : "?") + "mpa-page-breadcrumb=" + btoa(JSON.stringify(breadcrumb)).replace(/\+/g,"-").replace(/\//g,"_");
+            src += (src.indexOf("?") != -1 ? "&" : "?") + "x-page-breadcrumb=" + btoa(JSON.stringify(breadcrumb)).replace(/\+/g,"-").replace(/\//g,"_");
         }
         //stack page
         if (page) {
@@ -114,7 +102,7 @@ class MpaNavigator extends HTMLElement {
         if (target == "#dialog") {
             //show dialog
             let resolveFunc = null;
-            let page = document.createElement("mpa-page");
+            let page = document.createElement("x-page");
             page.setAttribute("src", url);
             page.setAttribute("type", "dialog");
             page.addEventListener("page:close", (event) => {
@@ -146,7 +134,7 @@ class MpaNavigator extends HTMLElement {
         let hashAfterParts =  (document.location.hash ? document.location.hash.substring(HASH_PREFIX.length).split(HASH_PREFIX) : []);
         let inc = 0;
         //close the last dialog
-        while (this.querySelector(":scope > mpa-page.dialog:last-child")) {
+        while (this.querySelector(":scope > x-page.dialog:last-child")) {
             this.removeChild(this.lastElementChild);
         }
         //process hash parts
@@ -155,7 +143,7 @@ class MpaNavigator extends HTMLElement {
             let hashAfterPart = hashAfterParts[i];
             if (!hashBeforePart && hashAfterPart) {
                 //add page
-                let page = document.createElement("mpa-page");
+                let page = document.createElement("x-page");
                 page.setAttribute("src", hashAfterPart);
                 if (i > 0) {
                     page.setAttribute("type", "stack");
@@ -174,14 +162,14 @@ class MpaNavigator extends HTMLElement {
                     if (this.pages.indexOf(event.target) == 0) {
                         //main page change
                         var label = event.target.label;
-                        if (label) document.title = label + " / " + mpaShell.config.label;
+                        if (label) document.title = label + " / " + props.get("app.label");
                     }
                 });
                 page.addEventListener("page:load", (event) => {
                     if (this.pages.indexOf(event.target) == 0) {
                         //main page loaded
                         var label = event.target.label;
-                        if (label) document.title = label + " / " + mpaShell.config.label;
+                        if (label) document.title = label + " / " + props.get("app.label");
                         //emit event navigation:end
                         bus.emit("navigation:end", {page: event.target});
                     }
@@ -190,14 +178,14 @@ class MpaNavigator extends HTMLElement {
                 //init app layout
                 if (i == 0) {
                     container = this.firstChild;
-                    if (!container) {
-                        let appLayout = mpaShell.config.ui.layouts.app.main;
+                    if (false && !container) {
+                        let appLayout = props.get("ui.layouts.app.main");
                         container = document.createElement(appLayout);
                         this.appendChild(container);
                     }
                 }
                 //add page to container
-                container.appendChild(page);
+                (container || this).appendChild(page);
             } else if (hashBeforePart && !hashAfterPart) {
                 //remove page
                 let page = this.pages[i + inc];
@@ -223,8 +211,8 @@ class MpaNavigator extends HTMLElement {
 }
 
 //define web component
-customElements.define('mpa-navigator', MpaNavigator);
+customElements.define('x-app', XApp);
 
 //export 
-export default MpaNavigator;
+export default XApp;
 
