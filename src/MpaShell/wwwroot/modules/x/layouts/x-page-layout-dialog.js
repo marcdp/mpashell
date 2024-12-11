@@ -1,7 +1,7 @@
 import XElement from "../ui/x-element.js";
 
 // class
-export default XElement.define("x-layout-page-dialog", {
+export default XElement.define("x-page-layout-dialog", {
     style: `
         :host {
             display:block; 

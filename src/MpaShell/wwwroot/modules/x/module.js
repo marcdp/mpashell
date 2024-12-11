@@ -3,10 +3,15 @@ export default {
     //config
     config: {
 
+        // app
+        "app.layout.default": "x-app-layout-default",
+
         //module
         "modules.x.name": "x",
         "modules.x.label": "X module",
         "modules.x.version": "1.0.0.0",
+        "modules.x.depends": [],
+        "modules.x.styles": ["./css/styles.css"],
 
         //loader
         "loader.page-handler.x-{name}": "./ui/page-handlers/x-{name}.js",
@@ -18,19 +23,16 @@ export default {
         "loader.icon.x-{name}.with": "svg",
         "loader.component.ace-editor": "https://unpkg.com/ace-custom-element@latest/dist/index.min.js",
 
-        //ui
-        "ui.components.page-error": "x-page-error",
-        "ui.components.page-loading": "x-page-loading",
+        // page
+        "page.error": "x-page-error",
+        "page.meta.x-page-handler": "x-page-handler-html",
+        "page.layout.default": "x-page-layout-default",
+        "page.layout.dialog": "x-page-layout-dialog",
+        "page.layout.main": "x-page-layout-main",
+        "page.layout.stack": "x-page-layout-stack",
+        "page.loading": "x-page-loading",
 
-        "ui.layouts.app.main": "x-layout-app-main",
-        "ui.layouts.page.main": "x-layout-page-main",
-        "ui.layouts.page.stack": "x-layout-page-stack",
-        "ui.layouts.page.dialog": "x-layout-page-dialog",
-        "ui.layouts.page.default": "x-layout-page-default",
 
-        "ui.meta.x-page-handler": "x-page-handler-sfc",
-
-        "ui.stylesheets.default": "./css/index.css"
     },
     // methods
     async mount() {

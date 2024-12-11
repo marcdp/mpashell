@@ -1,2 +1,1 @@
-D:\Reps\mpashell\samples\Sample2\wwwroot\module1\module.json
-D:\Reps\mpashell\samples\Sample2\wwwroot\module2\module.json
+D:\Reps\mpashell\samples\Sample2\wwwroot\module1\layouts\module1-layout.js

@@ -1,4 +1,4 @@
-import mpaShell from "../../../../mpa-shell.js";
+import app from "./../../../app.js";
 import XTemplate from "../x-template.js";
 import utils from "../../../../utils.js";
 import loader from "../../../../loader.js";
@@ -19,7 +19,7 @@ class XPageHandlerSfc extends HTMLElement  {
     }
 
     //properties
-    get page() { return mpaShell.getPage(this); }
+    get page() { return app.getPage(this); }
     get src() { return this.page.src; }
 
     get label() { return this.page.label; }

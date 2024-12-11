@@ -13,23 +13,47 @@
             "app.label": "Sample2 title",
             "app.version": "0.1",
             "app.copyright": "",
-            "app.logo": "./logo.svg",
+            "app.logo": "/logo.svg",
             "app.base": "",
-            "app.start": "/module1/pages/page1.html",
+            "app.start": "/module1/pages/page4.html",
+            "app.container": "body",
             // module x
             "modules.x.url": "/libs/mpa-shell/modules/x/module.js",
-            "modules.x.args": { a: 1, b: 2 },
+            "modules.x.path": "/libs/mpa-shell/modules/x",
             // module 1
             "modules.module1.url": "./module1/module.js",
             "modules.module1.path": "/module1",
             // module 2
             "modules.module2.url": "./module2/module.js",
-            "modules.module2.path": "/module2"
+            "modules.module2.path": "/module2",
+            "modules.module2.load": "lazy",
         });
         //start
         await app.start();
     </script>
 </head>
-<body>                                            
+<body>
 </body>
 </html>
+
+
+<!--
+
+- intentar fer que nomes existeixi un tipus de layout per a tot (main, stak, dialog, default), que sigui la propia pàgina qui crei el layout que necessita, i no pas el app.js.
+la x-page crearia el layout a dins del seu shadow dom, i no pas a la pàgina principal
+<x-page src="...", layout="main"></x-page>
+<x-page src="...", layout="stack"></x-page>
+<x-page src="...", layout="stack"></x-page>
+<x-page src="...", layout="dialog"></x-page>
+
+- x-app-layout-main --  make this one the default one
+- x-app-layout-default ---  layout for popup windows, with nothing special
+
+- pensar si cal fer multiples layouts per a les pagines en funcion de si es mostren en "main", "stack", "dialog" o "default"
+- x-page-layout-main --  make this one the default one
+
+- x-page: "type" --  renombrar a "target"? els possibles targets serien "main", "stack", "dialog", "default" - > en base a aixó s'utilitzaria el x-page-layout-xxxxx amb el mateix nom
+
+- app.js -> controlar les pàgines que te, en una variable array, i no basantse en el DOM
+
+-->

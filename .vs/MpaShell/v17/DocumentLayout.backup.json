@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "D:\\Reps\\mpashell\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|d:\\reps\\mpashell\\src\\mpashell\\wwwroot\\modules\\x\\ui\\x-template.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|solutionrelative:src\\mpashell\\wwwroot\\modules\\x\\ui\\x-template.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|d:\\reps\\mpashell\\src\\mpashell\\wwwroot\\modules\\x\\layouts\\x-page-layout-default.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|solutionrelative:src\\mpashell\\wwwroot\\modules\\x\\layouts\\x-page-layout-default.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|d:\\reps\\mpashell\\src\\mpashell\\wwwroot\\modules\\x\\layouts\\x-app-layout-default.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|solutionrelative:src\\mpashell\\wwwroot\\modules\\x\\layouts\\x-app-layout-default.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|d:\\reps\\mpashell\\src\\mpashell\\wwwroot\\modules\\x\\layouts\\x-page-layout-main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|solutionrelative:src\\mpashell\\wwwroot\\modules\\x\\layouts\\x-page-layout-main.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|d:\\reps\\mpashell\\src\\mpashell\\wwwroot\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|solutionrelative:src\\mpashell\\wwwroot\\app.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{24C788D7-286E-4A01-B484-4AF00B4DD025}|samples\\Sample2\\Sample2.csproj|d:\\reps\\mpashell\\samples\\sample2\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{24C788D7-286E-4A01-B484-4AF00B4DD025}|samples\\Sample2\\Sample2.csproj|solutionrelative:samples\\sample2\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|d:\\reps\\mpashell\\src\\mpashell\\wwwroot\\x-page.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|solutionrelative:src\\mpashell\\wwwroot\\x-page.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|d:\\reps\\mpashell\\src\\mpashell\\wwwroot\\modules\\x\\module.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{8EC24796-5D44-4CB3-B656-82C090FD249E}|src\\MpaShell\\MpaShell.csproj|solutionrelative:src\\mpashell\\wwwroot\\modules\\x\\module.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,28 +46,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "index.html",
-              "DocumentMoniker": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\index.html",
-              "RelativeDocumentMoniker": "samples\\Sample2\\wwwroot\\index.html",
-              "ToolTip": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\index.html",
-              "RelativeToolTip": "samples\\Sample2\\wwwroot\\index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2024-12-10T15:46:50.313Z",
+              "DocumentIndex": 0,
+              "Title": "x-template.js",
+              "DocumentMoniker": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\ui\\x-template.js",
+              "RelativeDocumentMoniker": "src\\MpaShell\\wwwroot\\modules\\x\\ui\\x-template.js",
+              "ToolTip": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\ui\\x-template.js",
+              "RelativeToolTip": "src\\MpaShell\\wwwroot\\modules\\x\\ui\\x-template.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-11T16:30:41.767Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "x-app-layout-default.js",
+              "DocumentMoniker": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-app-layout-default.js",
+              "RelativeDocumentMoniker": "src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-app-layout-default.js",
+              "ToolTip": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-app-layout-default.js",
+              "RelativeToolTip": "src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-app-layout-default.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-11T16:30:29.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "x-page-layout-main.js",
+              "DocumentMoniker": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-page-layout-main.js",
+              "RelativeDocumentMoniker": "src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-page-layout-main.js",
+              "ToolTip": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-page-layout-main.js",
+              "RelativeToolTip": "src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-page-layout-main.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-11T16:30:05.674Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "x-page-layout-default.js",
+              "DocumentMoniker": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-page-layout-default.js",
+              "RelativeDocumentMoniker": "src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-page-layout-default.js",
+              "ToolTip": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-page-layout-default.js",
+              "RelativeToolTip": "src\\MpaShell\\wwwroot\\modules\\x\\layouts\\x-page-layout-default.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-11T16:30:04.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "x-page.js",
+              "DocumentMoniker": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\x-page.js",
+              "RelativeDocumentMoniker": "src\\MpaShell\\wwwroot\\x-page.js",
+              "ToolTip": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\x-page.js",
+              "RelativeToolTip": "src\\MpaShell\\wwwroot\\x-page.js",
+              "ViewState": "AgIAAOgAAAAAAAAAAAAQwAQBAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-11T16:28:43.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "module.js",
+              "DocumentMoniker": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\module.js",
+              "RelativeDocumentMoniker": "src\\MpaShell\\wwwroot\\modules\\x\\module.js",
+              "ToolTip": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\modules\\x\\module.js",
+              "RelativeToolTip": "src\\MpaShell\\wwwroot\\modules\\x\\module.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-12-11T16:27:45.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "app.js",
               "DocumentMoniker": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\app.js",
               "RelativeDocumentMoniker": "src\\MpaShell\\wwwroot\\app.js",
               "ToolTip": "D:\\Reps\\mpashell\\src\\MpaShell\\wwwroot\\app.js",
               "RelativeToolTip": "src\\MpaShell\\wwwroot\\app.js",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAQwCsAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-12-10T14:53:16.237Z",
+              "WhenOpened": "2024-12-10T20:28:46.243Z",
               "EditorCaption": ""
             }
           ]

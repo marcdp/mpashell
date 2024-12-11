@@ -1,5 +1,5 @@
 import XElement from "../ui/x-element.js";
-import mpaShell from "./../../../mpa-shell.js";
+import config from "./../../../config.js";
 import bus from "../../../bus.js";
 
 // class

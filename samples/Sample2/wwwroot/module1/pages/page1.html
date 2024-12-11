@@ -1,9 +1,9 @@
 ﻿<html>
 <head>
     <meta name="description"    content="This is the description" />
-    <meta name="author"         content="asdas" />
-    <meta name="mpa-page-label" content="This is a label" />
-    <meta name="mpa-page-state" content='{"var1":"hello world"}' />
+    <meta name="author"         content="marc" />
+    <meta name="x-page-label"   content="This is a label" />
+    <meta name="x-page-state"   content='{"var1":"hello world"}' />
 </head>
 <body>
 
@@ -20,15 +20,15 @@
 
                 } else if (command == "show-page-stack-thin") {
                     //show page stack thin
-                    this.showPage({ url: "page4.html?message=hello+world&mpa-page-class=thin", target: "#stack" });
+                    this.showPage({ url: "page4.html?message=hello+world&x-page-class=thin", target: "#stack" });
 
                 } else if (command == "show-page-stack-thin-right") {
                     //show page stack thin right
-                    this.showPage({ url: "page4.html?message=hello+world&mpa-page-class=thin,right", target: "#stack" });
+                    this.showPage({ url: "page4.html?message=hello+world&x-page-class=thin,right", target: "#stack" });
 
                 } else if (command == "show-page-stack-popup") {
                     //show page stack popup
-                    this.showPage({ url: "page4.html?message=hello+world&mpa-page-class=popup", target: "#stack" });
+                    this.showPage({ url: "page4.html?message=hello+world&x-page-class=popup", target: "#stack" });
 
                 } else if (command == "show-page-dialog") {
                     //show page dialog
@@ -44,7 +44,7 @@
     <ul>
         <li><x-anchor href="page2.html">Help</x-anchor></li>
         <li><x-anchor href="page2.html" breadcrumb>Help2 with breadcrumb</x-anchor></li>
-        <li><x-anchor href="page2.html?mpa-page-label=helllllloooooo" breadcrumb>Help with breadcrumb and label</x-anchor></li>
+        <li><x-anchor href="page2.html?x-page-label=helllllloooooo" breadcrumb>Help with breadcrumb and label</x-anchor></li>
 
         <li><x-button command="show-page-stack" label="Show page stack"></x-button></li>
         <li><x-button command="show-page-stack-thin" label="Show page stack thin"></x-button></li>

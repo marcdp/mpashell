@@ -7,6 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\i18n.js" />
+    <Content Remove="wwwroot\mpa-navigator.js" />
+    <Content Remove="wwwroot\mpa-page.js" />
+    <Content Remove="wwwroot\mpa-shell.js" />
+    <Content Remove="wwwroot\settings.js" />
+    <Content Remove="wwwroot\ui.js" />
+    <Content Remove="wwwroot\x-app.js" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Resources\bus.js" />
   </ItemGroup>
 

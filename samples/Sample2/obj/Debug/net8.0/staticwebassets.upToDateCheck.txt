@@ -1,6 +1,7 @@
 wwwroot\favicon.ico
 wwwroot\index.html
 wwwroot\logo.svg
+wwwroot\module1\css\styles.css
 wwwroot\module1\icons\add.svg
 wwwroot\module1\module.js
 wwwroot\module1\pages\page1.html

@@ -18,8 +18,6 @@ class Config {
     subscribe(prefix, callback) {
         this._listeners.push({ prefix, callback });
     }
-    unsubscribe(prefix, callback) {
-    }
     set(config, from) {
         var keys = []
         for (let key in config) {
@@ -27,6 +25,14 @@ class Config {
             if (typeof (value) == "string") {
                 if (value.startsWith("./") || value.startsWith("../")) {
                     if (from) value = utils.combineUrls(from, value);
+                }
+            } else if (Array.isArray(value)) {
+                for (let i = 0; i < value.length; i++) {
+                    if (typeof (value[i]) == "string") {
+                        if (value[i].startsWith("./") || value[i].startsWith("../")) {
+                            if (from) value[i] = utils.combineUrls(from, value[i]);
+                        }
+                    }
                 }
             }
             this._config[key] = value;
@@ -49,20 +55,19 @@ class Config {
         let result = this._config[key];
         if (typeof (result) != "undefined") return result;
         if (typeof (defaultValue) == "undefined") {
-            console.error(`props.get('${key}') is undefined`);
+            console.warn(`config.get('${key}') configuration key is undefined`);
         }
         return defaultValue;
     }
-    /*getKeys(prefix) {
+    getKeys(prefix) {
         let result = [];
-        debugger;
         for (let key in this._config) {
-            if (key.startsWith(prefix)) {
+            if (key.startsWith(prefix + ".")) {
                 result.push(key)
             };
         }
         return result;
-    }*/
+    }
     getSubKeys(prefix) {
         let result = [];
         for (let key in this._config) {
@@ -72,6 +77,15 @@ class Config {
                     result.push(subKey)
                 }
             };
+        }
+        return result;
+    }
+    getAsObject(prefix) {
+        let result = {};
+        for (let key in this._config) {
+            if (key.startsWith(prefix + ".")) {
+                result[key.substring(prefix.length + 1)] = this._config[key];
+            }
         }
         return result;
     }

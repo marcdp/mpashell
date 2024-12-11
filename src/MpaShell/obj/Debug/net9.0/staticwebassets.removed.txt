@@ -1,5 +1,11 @@
+D:\Reps\mpashell\src\MpaShell\wwwroot\modules\x\layouts\x-layout-page-dialog.js
+D:\Reps\mpashell\src\MpaShell\wwwroot\modules\x\layouts\x-layout-app-main.js
 D:\Reps\mpashell\src\MpaShell\wwwroot\x-shell.js
 D:\Reps\mpashell\src\MpaShell\wwwroot\modules\x\module.json
+D:\Reps\mpashell\src\MpaShell\wwwroot\modules\x\layouts\x-layout-page-main.js
+D:\Reps\mpashell\src\MpaShell\wwwroot\modules\x\layouts\x-layout-page-stack.js
 D:\Reps\mpashell\src\MpaShell\wwwroot\x-navigator.js
 D:\Reps\mpashell\src\MpaShell\wwwroot\modules\x\ui\types\from-html.js
+D:\Reps\mpashell\src\MpaShell\wwwroot\modules\x\css\index.css
 D:\Reps\mpashell\src\MpaShell\wwwroot\modules\x\components\x-page-handler.js
+D:\Reps\mpashell\src\MpaShell\wwwroot\modules\x\layouts\x-layout-page-default.js

@@ -1,7 +1,7 @@
 import XElement from "../ui/x-element.js";
 
 // class
-export default XElement.define("x-layout-page-stack", {
+export default XElement.define("x-page-layout-stack", {
     style: `
         :host {display:block;}
     `,

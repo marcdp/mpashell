@@ -1,15 +1,7 @@
-import app from "../../../../app.js";
-
-debugger; 
+import app from "./app.js";
 
 // class
 class XPageHandlerHtml extends HTMLElement  {
-
-    //fields
-    _state = null;
-    _xtemplate = null;
-    _xtemplateInstance = null;
-    _renderTimeoutId = 0;
 
     //ctor
     constructor() {

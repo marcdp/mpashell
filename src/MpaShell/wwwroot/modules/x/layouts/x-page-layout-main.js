@@ -1,7 +1,7 @@
 import XElement from "../ui/x-element.js";
 
 // class
-export default XElement.define("x-layout-page-main", {
+export default XElement.define("x-page-layout-main", {
     style: `
         :host {display:block; margin-left:var(--x-app-drawer-width);}
         :host x-page-body {}

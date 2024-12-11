@@ -1,13 +1,12 @@
 import XElement from "../ui/x-element.js";
 
 // class
-export default XElement.define("x-layout-app-main", {
+export default XElement.define("x-app-layout-default", {
     style: `
         :host {display:block;}
     `,
     template: `
-        <x-app-drawer></x-app-drawer>
-        <x-app-bar></x-app-bar>
+        this is the default layout
         <slot></slot>
         
     `

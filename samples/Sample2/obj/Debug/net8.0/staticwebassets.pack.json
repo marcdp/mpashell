@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\logo.svg"
     },
     {
+      "Id": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\css\\styles.css",
+      "PackagePath": "staticwebassets\\module1\\css\\styles.css"
+    },
+    {
       "Id": "D:\\Reps\\mpashell\\samples\\Sample2\\wwwroot\\module1\\icons\\add.svg",
       "PackagePath": "staticwebassets\\module1\\icons\\add.svg"
     },

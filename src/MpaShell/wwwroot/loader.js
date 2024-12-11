@@ -52,6 +52,7 @@ class Loader {
                 for (let pattern of config.getSubKeys("loader." + type)) {
                     let resource = type + ":" + pattern;
                     let src = config.get("loader." + type + "." + pattern);
+                    let withh = config.get("loader." + type + "." + pattern + ".with", "");
                     let regexp = "";
                     let k = 0;
                     let i = resource.indexOf("{"), j = resource.indexOf("}");
@@ -65,6 +66,7 @@ class Loader {
                     let definition = {
                         resource,
                         src,
+                        with: withh,
                         regexp: new RegExp(regexp),
                     }
                     definition.regexp = new RegExp(regexp);
@@ -72,7 +74,6 @@ class Loader {
                 }
             }
             this._definitions = definitions;
-            debugger;
         })
     }
 
@@ -97,6 +98,7 @@ class Loader {
                 return { definition: mapitem, src };
             }
         }
+        debugger;
         console.error(`loader.resolve('${resource}'): unable to resolve`);
         return null;
     }

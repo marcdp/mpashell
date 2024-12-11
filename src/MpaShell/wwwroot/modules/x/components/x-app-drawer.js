@@ -1,5 +1,5 @@
 import XElement from "../ui/x-element.js";
-import mpaShell from "./../../../mpa-shell.js";
+import config from "./../../../config.js";
 
 // class
 export default XElement.define("x-app-drawer", {
@@ -67,9 +67,9 @@ export default XElement.define("x-app-drawer", {
         onCommand(command) {
             if (command == "load") {
                 // load
-                this.state.label = mpaShell.config.app.label;
-                this.state.logo = mpaShell.config.app.logo;
-                this.state.url = mpaShell.config.navigator.base;
+                this.state.label = config.get("app.label");
+                this.state.logo = config.get("app.logo");
+                this.state.url = config.get("app.base");
 
             } else if (command == "toggle") {
                 //toggle
